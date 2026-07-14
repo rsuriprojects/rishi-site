@@ -117,7 +117,8 @@ body.open .nav-link:nth-child(5){animation-delay:.38s}
   margin-right:var(--gutter);
   padding-right:60px;
 }
-section{padding:0 0 120px}
+section{padding:0}
+.divider{height:1px;background:var(--rule);margin:88px 0 30px}
 
 .eyebrow{
   font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;
@@ -128,9 +129,7 @@ section{padding:0 0 120px}
 /* ---------- Hero ---------- */
 .hero{
   display:flex;flex-direction:column;justify-content:center;
-  padding:24vh 0 90px;
-  border-bottom:1px solid var(--rule);
-  margin-bottom:90px;
+  padding:22vh 0 0;
 }
 .hero h1{
   font-family:var(--display);font-weight:400;
@@ -159,13 +158,12 @@ p+p{margin-top:1.15em}
 section p{max-width:64ch;opacity:.85}
 
 /* ---------- Doing (two-col rows) ---------- */
-#about{padding-bottom:60px;border-bottom:1px solid var(--rule);margin-bottom:60px}
-.doing{margin-top:56px}
+.doing{margin-top:52px}
 .thing{
   display:grid;grid-template-columns:180px 1fr;gap:40px;
-  padding:34px 0;border-top:1px solid var(--rule);
+  padding:32px 0;border-top:1px solid var(--rule);
 }
-.thing:last-child{border-bottom:1px solid var(--rule)}
+.thing:last-child{padding-bottom:0}
 .thing .label{
   font-family:var(--mono);font-size:.7rem;letter-spacing:.12em;
   text-transform:uppercase;color:var(--accent);
@@ -187,13 +185,13 @@ section p{max-width:64ch;opacity:.85}
 .thing a.out:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 
 /* ---------- Results ---------- */
-.results{margin-top:48px}
+.results{margin-top:44px}
 .result{
   display:grid;grid-template-columns:180px 1fr;gap:40px;
   padding:20px 0;border-top:1px solid var(--rule);
   align-items:baseline;
 }
-.result:last-child{border-bottom:1px solid var(--rule)}
+.result:last-child{padding-bottom:0}
 .result dt{
   font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;
   text-transform:uppercase;color:var(--accent);
@@ -219,7 +217,8 @@ section p{max-width:64ch;opacity:.85}
 .contact-links a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
 
 .colophon{
-  padding:50px 0 70px;
+  margin-top:88px;
+  padding:0 0 70px;
   font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;
   text-transform:uppercase;color:var(--parchment-dim);
 }
@@ -233,7 +232,7 @@ section p{max-width:64ch;opacity:.85}
   .wrap{padding-right:0}
   .sidebar{padding:100px 30px 34px}
   .nav-link{font-size:1.5rem}
-  section{padding:0 0 90px}
+  .divider{margin:64px 0 24px}
   .contact-links a{font-size:1.05rem;word-break:break-all}
 }
 </style>
@@ -273,6 +272,8 @@ section p{max-width:64ch;opacity:.85}
     </div>
   </section>
 
+  <div class="divider"></div>
+
   <section id="about">
     <span class="eyebrow">02 — About me</span>
     <h2>The long way around</h2>
@@ -280,6 +281,8 @@ section p{max-width:64ch;opacity:.85}
     <p>The rest of my time splits between things that make something and things that don't. Robotics and the nonprofit make things. Basketball behind the garage, the saxophone, whatever I've decided to bake that week — those don't make anything, and that's exactly the point of them.</p>
     <p>I made this site because I wanted a place that's mine, that isn't a profile on someone else's platform. It'll change as I do.</p>
   </section>
+
+  <div class="divider"></div>
 
   <section id="doing">
     <span class="eyebrow">03 — What I do</span>
@@ -329,6 +332,8 @@ section p{max-width:64ch;opacity:.85}
     </div>
   </section>
 
+  <div class="divider"></div>
+
   <section id="results">
     <span class="eyebrow">04 — Competitions</span>
     <h2>Where the studying went</h2>
@@ -348,6 +353,8 @@ section p{max-width:64ch;opacity:.85}
       </div>
     </dl>
   </section>
+
+  <div class="divider"></div>
 
   <section id="contact">
     <span class="eyebrow">05 — Contact</span>
